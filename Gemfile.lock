@@ -131,8 +131,6 @@ GEM
     fog-xml (0.1.4)
       fog-core
       nokogiri (>= 1.5.11, < 2.0.0)
-    font-awesome-sass (5.0.13)
-      sassc (>= 1.11)
     formatador (1.1.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
@@ -306,7 +304,6 @@ DEPENDENCIES
   devise
   dotenv-rails
   fog-aws
-  font-awesome-sass (~> 5.0.13)
   image_processing
   jbuilder (~> 2.7)
   mini_magick
