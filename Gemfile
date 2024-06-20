@@ -72,8 +72,8 @@ gem 'mini_magick'
 # Active Storageバリデーション用
 gem 'active_storage_validations'
 gem 'dotenv-rails'
-gem 'font-awesome-sass', '~> 5.0.13'
-gem 'sass-rails', '6.0.0'
+gem 'font-awesome-sass', '6.5.2'
+
 
 
 
