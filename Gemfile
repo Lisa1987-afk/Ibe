@@ -73,5 +73,7 @@ gem 'mini_magick'
 gem 'active_storage_validations'
 gem 'dotenv-rails'
 gem 'font-awesome-sass', '~> 5.0.13'
+gem 'sass-rails', '6.0.0'
+
 
 
