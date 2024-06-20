@@ -56,7 +56,6 @@
   }
   // 星
   .star-rating{
-   
     
     text-align: center;
     
@@ -93,9 +92,9 @@
 
 
 .button {
- background: none;
- border: none;
- cursor: pointer;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .vegans-top {
@@ -239,18 +238,18 @@
     font-family: 'Yomogi', cursive;
     font-size: 50px;
   }
-   
-   input#search{
+
+input#search{
     width:400px;
     height:50px;
-   }
+}
 
-   input{
+  input{
     width: 150px;
     height: 50px;
     font-size: x-large;
     margin-top: 20px;
-   }
+}
 
   .hoge{
     width: 24%;
@@ -264,7 +263,7 @@
   .hope{
     width: 100%;
     height: 550px;
-   
+
     }
     
   .arisa{
@@ -321,10 +320,10 @@
   }
   
 
-   .select#vegan_genre{
+.select#vegan_genre{
     height:100px;
   
-   }
+}
 
   
 
@@ -438,3 +437,4 @@
   flex-direction: column;
   align-items: center; 
 }
+
