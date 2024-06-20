@@ -1,0 +1,85 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at https://guides.rubyonrails.org/i18n.html.
+
+en:
+  vegans:
+    index:
+      hello_html: <h2>What's Vegan?</h2>
+      he_html: It refers to people who do not consume animal products and pursue a non-animal use lifestyle. There are many other dietary styles, like vegetarian, pescatorian, and fruitarian.
+      gm_html: <h3>Your Compass to Conscious Cuisine!</h3>
+      gn_html: <h3>Search for restaurants </h3>
+      ge_html: <h1>Top Restaurants </h1>
+      gg_html: <h1>Ranking</h1>
+      star_html: <h2>Overall Rating</h2>
+      review_html: <h1>List of reviews</h1>
+
+    new:
+      love_html: <h3>New Post</h3>
+      rating_html: <h5>Overall Rating</h5>
+      excellent_html: Excellent
+      good_html: Good
+      average_html: Average
+      bad_html: Bad
+      terrible_html: Terrible
+    
+    show:
+      about_html: <h1>Post Details</h1>
+      comment_html: Comment list
+
+  submit_button:
+    save: Search
+    post: Post
+    comment: Add comment
+    logout: Log Out
+    edit: Edit
+
+  links:
+    join: "Sign up"
+    back: "Log in"
+    new: "New post"
+    info: "More detail!"
+    detail: "Go to details"
+    ed: "Edit post"
+    delete: "Delete post"
+    list: "Back to list"
+    edit: "Edit post"
+    list2: "Back to restaurant list"
+    
+
+
+  activerecord:
+    attributes:
+      vegan:
+        name: "Name"
+        genre: "Genre"
+        price: "Price"
+        adress: "Address"
+        about: "Detail"

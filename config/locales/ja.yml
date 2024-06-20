@@ -1,0 +1,58 @@
+ja:
+  vegans:
+    index:
+      hello_html: <h1>ヴィーガンとは？</h1>
+      he_html: 動物製品を摂取せず、動物を利用しないライフスタイルを追求する人々のことを指します。ほかにもベジタリアン、ペスカトリアン、フルーツタリアンなど様々な食事スタイルがあります。
+      gm_html: <h1><span>ヴィーガン料理の新たな旅へ！</span></h1>
+      gn_html: <h1><span>レストランを探す</span></h1>
+      ge_html: <h1>人気</h1>
+      gg_html: <h1>ランキング</h1>
+      review_html: <h1>レビュー一覧</h1>
+      
+    new: 
+      love_html: 新規投稿ページ
+      rating_html: 総合評価
+      excellent_html: 最高
+      good_html: 良い
+      average_html: 普通
+      bad_html: 悪い
+      terrible_html: 最悪
+    
+    show:
+      about_html: <h1>投稿詳細</h1>
+      comment_html: コメント一覧
+      comment: コメントする
+    
+    applicaton:
+      logout: ログアウト
+     
+      
+
+  submit_button:
+    save: 検索する
+    post: 投稿する
+    comment: コメント
+    logout: ログアウト
+    edit: 編集
+
+  links:
+    join: "新規登録"
+    back: "ログイン"
+    new: "新規投稿"
+    info: "もっと詳しく！"
+    detail: "詳細へ"
+    ed: "編集する"
+    delete: "削除する"
+    list: "一覧へ戻る"
+    edit: "編集"
+    list2: "レストラン一覧へ戻る"
+
+  activerecord:
+    attributes:
+      vegan:
+        name: "店名"
+        genre: "ジャンル"
+        price: "価格"
+        adress: "住所"
+        about: "詳細"
+    

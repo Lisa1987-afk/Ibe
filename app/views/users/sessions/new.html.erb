@@ -1,0 +1,34 @@
+
+<div class="sophie">
+<span class="masking-tape2">
+</span><p>Log in</p>
+
+
+
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="sophie_field">
+        <%= f.label :email %>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+      </div>
+
+      <div class="sophie_field">
+        <%= f.label :password %>
+        <%= f.password_field :password, autocomplete: "current-password" %>
+      </div>
+
+
+      <% if devise_mapping.rememberable? %>
+        <div class="sophie_field">
+          <%= f.check_box :remember_me %>
+          <%= f.label :remember_me %>
+        </div>
+      <% end %>
+
+      <div class="actions">
+        <%= f.submit "Log in" %>
+      </div>
+    <% end %>
+
+    <%= render "users/shared/links" %>
+    
+</div>

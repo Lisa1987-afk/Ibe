@@ -1,0 +1,116 @@
+<%= stylesheet_link_tag 'index', :media => "all" %>
+
+<div class="arisa">
+  
+  <div class="vegans-top">
+    <%= image_tag '野菜2.jpg', class: 'slide-image2' %>
+    <%= image_tag '日本食.jpg', class: 'slide-image2' %>
+    <%= image_tag 'カラフル.jpg', class: 'slide-image2' %>
+    <%= image_tag '緑.jpg', class: 'slide-image2' %>
+
+      <div class="kensaku">
+      <%= t(".gm_html") %>
+      <%= t(".gn_html") %>
+  
+      <%= form_tag({controller:"vegans", action:"index"}, method: :get) do %>
+        <%= text_field_tag :search %>
+          <%= button_tag type: "submit", class: "button" do %>
+            <i class="fa-solid fa-magnifying-glass fa-50px" style="color:black;"></i>
+        
+          <% end %>
+      
+        <% end %>
+      </div>
+       <!-- 調整したSVG波形 -->
+       <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+       <path fill="#fff" fill-opacity="1" d="M0,160L60,180C120,200,240,240,360,240C480,240,600,200,720,200C840,200,960,240,1080,240C1200,240,1320,200,1380,180L1440,160L1440,320L0,320Z"></path>
+      </svg>
+
+  </div> 
+  
+  <div class="candy">
+        <div class="tomato">
+        <span class="masking-tape">
+          </span> <p><%= t(".ge_html") %></p>
+          <p><%= t(".gg_html") %></p>
+            <% @vegans.order(overall: :desc).each.with_index do |vegan, index| %>
+              <li>
+                
+                <%= vegan.name %> (☆<%= vegan.overall %>)
+              </li>
+            <% end %>
+        </div>
+
+
+        <div class="touko">
+        <span class="masking-tape">
+        </span> <p><%= t(".hello_html") %></p>
+        
+          <div class="touko2">
+          <%= t(".he_html") %><br>
+              <%= link_to t('links.info'), vegan_info_path %>
+          </div>
+        </div>  
+  </div>
+
+ 
+<div class="slide">
+  <%= image_tag 'アサイー.jpg', class: 'slide-image' %>
+  <%= image_tag 'パスタ.jpg', class: 'slide-image' %>
+  <%= image_tag '寿司.jpg', class: 'slide-image' %>
+  <%= image_tag 'バーガー.jpg', class: 'slide-image' %>
+</div>
+
+
+<div class="yoshiko">
+<span class="masking-tape">
+</span><p><%= t(".review_html") %></p>
+  
+  <%= link_to t('links.new'), new_vegan_path %>
+
+
+  <div class="vegans-container">
+   
+    <% @vegans.each do |t| %>
+      
+        <div class="main-box">
+          
+              <%= t.user.email %><br>
+              
+              <%= t.name %><br>
+              <div class="star-rating">
+                <span class="star-rating-front" style="width: <%= getPercent(t.overall) %>%;">★★★★★</span>
+                <span class="star-rating-back">★★★★★</span>
+             </div> <br>
+             
+
+              <%= t.genre %>
+              <%= t.price %>円<br>
+              <%= t.adress %>
+              <%= t.about %>
+             
+              
+              
+              <%= image_tag t.resize_image_top if t.image_top.attached? %>
+              
+
+            
+
+              <%= button_to t('links.delete'), vegan_path(t.id), method: :delete %>
+            
+          
+          <p class="time"><%= t.created_at %></p>
+          <%= link_to t('links.detail'), vegan_path(t.id) %>
+
+         <%= link_to t('links.ed'), edit_vegan_path(t.id) %>
+
+        </div>
+      
+    
+    <% end %>
+
+    
+   </div>
+    
+ 
+</div> 

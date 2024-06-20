@@ -1,0 +1,115 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ * {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    min-height: 100vh;
+    position: relative; 
+    font-family: 'Yomogi', cursive;
+    font-size: 29px;
+    display: flex;
+    flex-direction: column;
+    
+
+   
+  }
+
+  main{
+    margin-top: 90px;
+  }
+
+  .yomogi-regular {
+    font-family: 'Yomogi', cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+  header {
+    background-color: #E6CF9D;
+    height: 80px;
+    font-weight: bold;
+   
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 10;
+    position: sticky;
+    width: 100%;
+
+    .title1{
+      color: white;
+      font-size: 50px;
+      width: 1000px;
+      box-sizing: border-box;
+      padding-left: 20px;
+      padding-bottom: 10px;
+    }
+  }
+
+  header a {
+    
+    color: white; 
+    text-decoration: none; 
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 10px;
+    
+  }
+  
+
+  .header-list {
+    align-items: center;
+    margin-left: 500px;
+    padding-top: 15px;
+    width:100px;
+  }
+  header ul {
+    display: flex;
+    width: 50px;
+    
+  }
+  header li {
+    list-style: none;
+    
+  }
+  footer {
+    color: white;
+    height: 30px;
+    background-color: #000;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: flex-end;
+    font-family: 'Yomogi', cursive;
+  }
+  
+  .title{
+    display:flex;
+  
+  }
+  .Gengo{
+    width: 200px;
+    padding-top: 15px;
+  }
+
+ 
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+
+  
