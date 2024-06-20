@@ -13,6 +13,9 @@ module Veggie
     config.i18n.available_locales = %i(ja en)
     config.i18n.enforce_available_locales = true
     config.i18n.default_locale = :ja
+   
+    config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components')
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
